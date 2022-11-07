@@ -38,7 +38,7 @@ function onFormSubmit(evt) {
 }
 
 function unsavedInfo() {
-  let data = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY));
+  let data = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
 
   if (data) {
     refs.input.value = !!data.email ? data.email : '';
